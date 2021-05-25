@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,200&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ebf0f4;
+}
+
+
+
+/* header */
+header nav {
+    position: fixed;
+    width: 100%;
+    background-color: #363062;
+    color: white;
+}
+
+header nav li {
+    display: inline;
+    list-style-type: none;
+    margin-right: 10px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+}
+header nav a:hover {
+    cursor: pointer;
+}
+
+header .jumbotron {
+    font-size: 16px;
+    padding: 150px 100px 100px 100px;
+    text-align: center;
+    color: white;
+    background-color: #4d4c7d;
+}
+
+header .jumbotron h1 {
+    font-weight: bold;
+}
+
+/* header */
+
+
+/* tambahan */
+.card {
+    margin : 10px 20px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 5px;
+    background-color: white;
+    
+}
+
+.judul{
+    background-color: #f8f8f8;
+    text-align: center;
+}
+/* tambahan */
+
+
+/* aboutme */
+#aboutme{
+    flex-basis: 20%;
+    text-align: center;
+}
+
+#aboutme .profile{
+    width: 150px;
+    border-radius: 100px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+}
+
+#aboutme table {
+    margin: 0 auto;
+    font-size: 12px;
+    text-align: left;
+}
+
+#aboutme .icon{
+    width: 20px;
+}
+
+#aboutme figure {
+    padding: 0;
+    margin: 0;
+}
+/* aboutme */
+
+
+/* myskill */
+#myskill{
+    flex-basis: 80%;
+    animation-name: myskill;
+    animation-duration: 1s;
+}
+
+@keyframes myskill{
+    from {transform: scale(0.1,0.1);}
+    to {transform: scale(1,1);}
+}
+
+
+#myskill .myskill-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#myskill .myskill-content figure {
+    text-align: center;
+}
+
+
+
+#myskill .myskill-content .card{
+    transition: 0.2s;
+}
+
+#myskill .myskill-content .card:hover{
+    transform: scale(1.1,1.1);
+    box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2);
+}
+/* myskill */
+
+
+/* contact */
+#contact{
+    flex-basis: 80%;
+    text-align: center;
+    animation-name: kontak;
+    animation-duration: 1s;
+}
+
+@keyframes kontak{
+    from {transform: scale(0.1,0.1);}
+    to {transform: scale(1,1);}
+}
+#contact .icon{
+    width: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+#contact table{
+    width: 500px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+input,textarea{
+    width: 300px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+
+#contact .button{
+    width: 100px;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    background-color: #51eaea;
+    margin: 0 auto;
+    cursor: pointer;
+}
+/* contact */
+
+/* footer */
+footer {
+    padding: 5px;
+     text-align: center;
+     background-color: #363062;
+     color: white;
+ }
+/* footer */
+
+
+/* layout */
+.flex-container-column {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+ }
+
+.flex-container-row {
+    display: flex;
+    flex-direction: row;
+}
+/* layout */
+
+
+/* responsive */
+@media screen and (max-width: 992px) {
+header .jumbotron {
+    font-size: 10px;
+    padding: 150px 100px 100px 100px;
+    text-align: center;
+    color: white;
+    background-color: #4d4c7d;
+}
+
+.flex-container-row {
+    display: flex;
+    flex-direction: column;
+}
+
+#aboutme{
+    flex-basis: 100%;
+    text-align: center;
+    order: 3;
+}
+
+#myskill{
+    flex-basis: 100%;
+    animation-name: myskill;
+    animation-duration: 1s;
+    font-size: 12px;
+    order: 1;
+}
+
+#myskill .myskill-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#contact{
+    flex-basis: 100%;
+    text-align: center;
+    animation-name: kontak;
+    animation-duration: 1s;
+    order: 2;
+}
+
+#contact table{
+    width: 300px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+input,textarea{
+    width: 200px;
+    margin: 0 auto;
+    text-align: left;
+}
+}
+/* responsive */

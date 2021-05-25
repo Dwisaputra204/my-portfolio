@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>MyPortfolio</title>
+
+</head>
+<body>
+<!-- header -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#" style="font-weight: bold; font-size: 18px;">MyPortfolio</a></li>               
+                <li><a onclick="displaySkill();" id="btn-skill">MySkills</a></li>
+                <li>|</li>
+                <li><a onclick="displayContact();" id=btn-contact>Contact</a></li>
+            </ul>
+        </nav>
+        <div class="jumbotron">
+            <h1>Hi, Myname is Dwi Saputra</h1>
+            <p>I'm a Web Designer</p>
+        </div>
+    </header>
+<!-- header -->
+    <main>
+        <div class="flex-container-column">
+            <div class="flex-container-row">
+                <!-- aboutme -->
+                <section id="aboutme">
+                    <aside class="card">
+                        <article>
+                            <header>                    
+                                <figure>
+                                    <h3 class="judul">About Me</h3>
+                                    <img src="assets/img/myprofile.jpg" alt="image" class="profile"><br><br>                              
+                                    <table>
+                                        <tr>
+                                            <td><img src="assets/img/icon/user.png" alt="image" class="icon"></td>
+                                            <td></td>
+                                            <td>Dwi Saputra</td>
+                                        </tr>
+                                        <tr>
+                                            <td><img src="assets/img/icon/birth.png" alt="image" class="icon"></td>
+                                            <td></td>
+                                            <td>07 June 1997</td>
+                                        </tr>
+                                        <tr>
+                                            <td><img src="assets/img/icon/place.png" alt="image" class="icon"></td>
+                                            <td></td>
+                                            <td>Indonesia</td>
+                                        </tr>
+                                    </table>                                
+                                </figure>
+                            </header>
+                        </article>
+                    </aside>
+                </section>
+                <!-- aboutme -->
+
+                <!-- myskill -->
+                <section id="myskill">
+                    <article class="card">
+                        <h3 class="judul">My Skills</h3>
+                        <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, maxime, vel a perspiciatis aliquam repudiandae aspernatur sed provident mollitia cupiditate sapiente facere minima ipsum officiis vitae, voluptatibus earum temporibus veritatis!</p>
+                        <div class="myskill-content">
+                            <div class="card">
+                                <figure>
+                                    <img src="assets/img/icon/html.png" alt="image">
+                                    <h3>HTML</h3>
+                                </figure>
+                            </div>
+                            <div class="card">
+                                <figure>
+                                    <img src="assets/img/icon/css.png" alt="image">
+                                    <h3>CSS</h3>
+                                </figure>
+                            </div>
+                            <div class="card">
+                                <figure>
+                                    <img src="assets/img/icon/js.png" alt="image">
+                                    <h3>JAVASCRIPT</h3>
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="myskill-content">
+                            <div class="card">
+                                <figure>
+                                    <img src="assets/img/icon/bootstrap.png" alt="image">
+                                    <h3>BOOTSTRAP</h3>
+                                </figure>
+                            </div>
+                            <div class="card">
+                                <figure>
+                                    <img src="assets/img/icon/react.png" alt="image">
+                                    <h3>REACT</h3>
+                                </figure>
+                            </div>
+                            <div class="card">
+                                <figure>
+                                    <img src="assets/img/icon/vue.png" alt="image">
+                                    <h3>VUE</h3>
+                                </figure>
+                            </div>
+                        </div>
+                    </article>                
+                </section>
+                <!-- myskill -->
+
+                <!-- contact -->
+                <article id="contact" class="card">
+                    <h3 class="judul">Contact</h3>
+                    <div class="form">
+                        <table>
+                            <tr>
+                                <td>Name</td>                                
+                                <td><Input type="text"></Input></td>
+                            </tr>
+                            <tr>
+                                <td>Email</td>                                
+                                <td><Input type="text"></Input></td>
+                            </tr>
+                            <tr>
+                                <td>Message</td>                                
+                                <td><textarea name="msg" id="msg" cols="30" rows="10"></textarea></td>
+                            </tr>                        
+                        </table>
+                        <div class="button">
+                            Send
+                        </div>
+                    </div>
+                    <br><br>
+                    <p>Follow Me</p>
+                    <img src="assets/img/icon/fb.png" alt="image" class="icon">
+                    <img src="assets/img/icon/twitter.png" alt="image" class="icon">
+                    <img src="assets/img/icon/instagram.png" alt="image" class="icon">
+                    <img src="assets/img/icon/youtube.png" alt="image" class="icon"> 
+                </article>                            
+                <!-- contact -->
+            </div>
+        </div>
+    </main>
+            
+    <!-- footer -->
+    <footer>
+        <p>Dwi Saputra | &copy 2020</p>
+    </footer>
+    <!-- footer -->
+    
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
